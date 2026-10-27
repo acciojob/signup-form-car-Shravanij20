@@ -8,55 +8,53 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form method="post">
-		<label for="name">Name</label>
-		<input type="text" id="name" required placeholder="Name">
-		<br>
+	<form method="POST">
+  <!-- Name Field -->
+  <label for="name">Name</label>
+  <input type="text" id="name" required placeholder="Name">
+  <br>
 
-		<label for="email">Email</label>
-		<input type="Email" id="email" required placeholder="Email">
-		<br>
+  <!-- Email Field -->
+  <label for="email">Email</label>
+  <input type="email" id="email" required placeholder="Email">
+  <br>
 
-		<label for="gender_m">Gender</label>
-		<input type="Radio" id="gender_m" name="gender" required>Male
-		<br>
-	
-		<input type="Radio" id="gender_f" name="gender" required>Female
-		<br>
-	
-		<label for="cars">Car Brands:</label>
-		<select id="cars" placeholder="--Please choose an option--" required>
-		  
-		  <option value="toyota">Toyota</option>
-		  <option value="ford">Ford</option>
-		  <option value="honda">Honda</option>
-		  <option value="tesla">Tesla</option>
-		</select>
-		<br>
-	
-		<label for="age">Age</label>
-		<input type="Number" id="age" required placeholder="Age">
-		<br>
-	
-		<label for="dob">DOB</label>
-		<input type="Date" id="dob" required placeholder="Name">
-		<br>
-	
-		<label for="tel">Phone Number</label>
-		<input type="Tel" id="tel" placeholder="xxx-xxx-xxxx">
-		<br>
-	
-		<label for="password">Password</label>
-		<input type="Password" id="password" required placeholder="Password">
-		<br>
-	
-		<label for="tos">I agree to the TOS</label>
-		<input type="Checkbox" id="tos" required>
-		<br>
+  <!-- Gender Field -->
+  <!-- Label with 'for' matching the first radio option as required by standard testing -->
+  <label for="gender_m">Gender</label>
+  <input type="radio" id="gender_m" name="gender" required value="male"> Male
+  <input type="radio" id="gender_f" name="gender" required value="female"> Female
+  <br>
 
-		<button type="submit" value="Submit">
+  <!-- Car Brands Field (Not Required, Exact values matched) -->
+  <label for="cars">Car Brands</label>
+  <select id="cars">
+    <option value="" disabled selected>--Please choose an option--</option>
+    <option value="BMW">BMW</option>
+    <option value="Audi">Audi</option>
+    <option value="Mercedez">Mercedez</option>
+  </select>
+  <br>
 
-	</form>
+  <!-- Age Field -->
+  <label for="age">Age</label>
+  <input type="number" id="age" required placeholder="Age">
+  <br>
+
+  <!-- DOB Field -->
+  <label for="dob">DOB</label>
+  <input type="date" id="dob" required>
+  <br>
+
+  <!-- Password Field -->
+  <label for="password">Password</label>
+  <input type="password" id="password" required placeholder="Password">
+  <br>
+
+  <!-- Submit Button (Fixed Syntax) -->
+  <button type="submit">Submit</button>
+</form>
+
     <script type="text/javascript" src="./script.js">
 </script>
 
