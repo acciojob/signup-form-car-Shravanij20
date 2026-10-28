@@ -1,63 +1,67 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 	<!-- the entire body must be written by student -->
-	<form method="POST">
-  <!-- Name Field -->
-  <label for="name">Name</label>
-  <input type="text" id="name" required placeholder="Name">
-  <br>
+	<form method="post">
+		<!-- Name Field -->
+		<label for="name">Name</label>
+		<input type="text" id="name" required placeholder="Name">
+		<br>
 
-  <!-- Email Field -->
-  <label for="email">Email</label>
-  <input type="email" id="email" required placeholder="Email">
-  <br>
+		<!-- Email Field -->
+		<label for="email">Email</label>
+		<input type="email" id="email" required placeholder="Email">
+		<br>
 
-  <!-- Gender Field -->
-  <!-- Label with 'for' matching the first radio option as required by standard testing -->
-  <label for="gender_m">Gender</label>
-  <input type="radio" id="gender_m" name="gender" required value="male"> Male
-  <input type="radio" id="gender_f" name="gender" required value="female"> Female
-  <br>
+		<!-- Gender Field (Both options get a matching label) -->
+		<label for="gender_m">Gender</label>
+		<input type="radio" id="gender_m" name="gender" required>
+		<label for="gender_f"></label>
+		<input type="radio" id="gender_f" name="gender" required>
+		<br>
 
-  <!-- Car Brands Field (Not Required, Exact values matched) -->
-  <label for="cars">Car Brands</label>
-  <select id="cars">
-    <option value="" disabled selected>--Please choose an option--</option>
-    <option value="BMW">BMW</option>
-    <option value="Audi">Audi</option>
-    <option value="Mercedez">Mercedez</option>
-  </select>
-  <br>
+		<!-- Car Brands Field -->
+		<label for="cars">Car Brands</label>
+		<select id="cars" required>
+			<option value="" disabled selected>--Please choose an option--</option>
+			<option value="BMW">BMW</option>
+			<option value="Audi">Audi</option>
+			<option value="Mercedez">Mercedez</option>
+		</select>
+		<br>
 
-  <!-- Age Field -->
-  <label for="age">Age</label>
-  <input type="number" id="age" required placeholder="Age">
-  <br>
+		<!-- Age Field -->
+		<label for="age">Age</label>
+		<input type="number" id="age" required placeholder="Age">
+		<br>
 
-  <!-- DOB Field -->
-  <label for="dob">DOB</label>
-  <input type="date" id="dob" required>
-  <br>
+		<!-- DOB Field -->
+		<label for="dob">DOB</label>
+		<input type="date" id="dob" required>
+		<br>
 
-  <!-- Password Field -->
-  <label for="password">Password</label>
-  <input type="password" id="password" required placeholder="Password">
-  <br>
+		<!-- Phone Number Field (Required: No) -->
+		<label for="tel">Phone Number</label>
+		<input type="tel" id="tel" placeholder="xxx-xxx-xxxx">
+		<br>
 
-  <!-- Submit Button (Fixed Syntax) -->
-  <button type="submit">Submit</button>
-</form>
+		<!-- Password Field -->
+		<label for="password">Password</label>
+		<input type="password" id="password" required placeholder="Password">
+		<br>
 
-    <script type="text/javascript" src="./script.js">
-</script>
+		<!-- TOS Field -->
+		<label for="tos">I agree to the TOS</label>
+		<input type="checkbox" id="tos" required>
+		<br>
 
+		<!-- Submit Button -->
+		<button type="submit">Submit</button>
+	</form>
+
+	<script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
